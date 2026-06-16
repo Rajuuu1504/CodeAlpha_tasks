@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<!-- Filter Buttons -->
+<div class="filters">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('Innovation')">Innovation</button>
+  <button onclick="filterImages('Exploration')">Exploration</button>
+  <button onclick="filterImages('Culture')">Culture</button>
+  <button onclick="filterImages('Sustainiblity')">Sustainiblity</button>
+
+
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+  <img src="image/img5.jpg" class="gallery-item Innovation">
+  <img src="image/img2.jpg" class="gallery-item Exploration">
+  <img src="image/img3.jpg" class="gallery-item Culture">
+  <img src="image/33.jpg" class="gallery-item Sustainiblity">
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+  <div class="controls">
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
